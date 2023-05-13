@@ -1,0 +1,254 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+/* Generales  */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color:#757575;
+    line-height: 1.2;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+a:hover{
+    color:#2196F3;
+}
+
+a{
+    text-decoration: none;
+    font-style: normal;
+    color: #757575;
+}
+
+button:hover{
+    background-color:#2196F3;
+    color:#fff;
+    cursor: pointer;
+}
+
+button{
+    border-width:0 ;
+}
+
+header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+h2{
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+h2,
+h3{
+    color:#212121;
+}
+
+ul{
+    font-style: normal;
+    list-style: none;
+    padding-left: 0;
+    gap: 30px;
+}
+
+.section{
+    padding-top: 97px;
+}
+
+nav,
+.links_nav_bar,
+.elements,
+.filters,
+.header_items,
+.benefits,
+.team,
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer,
+.hero{
+    background-color: #2F303A;
+    color:#fff;
+}
+
+footer, 
+.team_section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+
+
+/* ------------------------------------ Index ------------------------------------ */
+
+
+/* --------- Header --------- */
+
+.header_items{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: center;
+}
+
+.header_contact{
+    margin-left: 344px;
+}
+
+.header_contact .tel{
+    padding-left: 50px;
+}
+
+.nav_bar{
+    margin-left: 93px;
+}
+
+.logo{
+    font-family: "Raleway", sans-serif;
+    color:#2196F3;
+    font-size: 26px;
+}
+
+.links_nav_bar{
+    font-weight: 500;
+    color:#000;
+    text-shadow: 0px 4px 4px #bcbcbc;
+}
+
+/* --------- Main --------- */
+
+/* --------- Hero --------- */
+
+.title_studio{
+    font-size: 44px;
+}
+
+.hero{
+    background-image: url(/images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+}
+
+.hero_content{
+    padding-top: 200px;
+}
+
+.button_hero_studio{
+    border-width: 0;
+    background-color: #2196F3;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 30px;
+    width: 261px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.button_hero_studio:hover{
+    background-color: #1380da;
+}
+
+/* --------- Benefits --------- */
+
+.benefit{
+    width: 270px;
+}
+
+.benefit_box_sup{
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.benefit_icon{
+    fill: #000;
+    width: 70px;
+    height: 70px;
+}
+
+/* --------- what do we do --------- */
+
+.what_do_we_do{
+    padding-bottom: 97px;
+}
+
+/* --------- Team --------- */
+
+.team_section{
+    background-color: #F5F4FA;
+}
+
+.team li{
+    background-color: #fff;
+    height: 368px;
+    text-align: center;
+}
+
+.team li h3{
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: medium;
+}
+
+
+/* ------------------------------------ Portafolio ------------------------------------ */
+
+/* --------- main ---------  */
+
+/* ---------  nav bar buttons --------- */
+
+.bar_buttons{
+    margin-bottom: 50px;
+}
+
+.filters{
+    margin: 0 auto;
+    gap: 8px;
+}
+
+.filters button{
+    width: 128px;
+    height: 38px;
+    border-radius: 4px;
+}
+
+/* --------- Projects --------- */
+
+.projects_container{
+    justify-content: center;
+    margin-bottom: 82px;
+}
+
+.project a:hover{
+    color: #757575;
+}
+
+.projects{
+    justify-content: center;
+}
+
+.text_card{
+    margin: 20px ;
+}
+
+.footer_card{
+    border: 1px solid #ECECEC;
+}
+
+
