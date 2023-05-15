@@ -31,11 +31,14 @@ a{
     color: #757575;
 }
 
-button:hover{
+button:hover,
+button:focus{
     background-color:#2196F3;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.12);
     color:#fff;
     cursor: pointer;
 }
+
 
 button{
     border-width:0 ;
@@ -66,17 +69,12 @@ ul{
     padding-top: 97px;
 }
 
-nav,
-.links_nav_bar,
-.elements,
-.filters,
-.header_items,
-.benefits,
-.team,
-.projects{
-    display: flex;
-    flex-wrap: wrap;
-}
+
+
+
+
+
+/* --------- Repeating elements and sections --------- */
 
 footer,
 .hero{
@@ -90,13 +88,74 @@ footer,
     padding-bottom: 94px;
 }
 
+.icons_social_network{
+    display: flex;
+    width: 200px;
+    height: 44px; 
+    gap: 10px;
+    align-items: center;
+}
+
+.icon_instagram,
+.icon_twitter,
+.icon_facebook,
+.icon_linkedin{
+    width: 44px;
+    height: 44px;
+}
+
+.icon_instagram use{
+    justify-content: center;
+}
 
 
+.icon_social_network {
+    width: 44px;
+    height: 44px;
+}
+
+.icon_social_network a{
+    width: 44px;
+    height: 44px;
+}
+
+.icon
+
+.icon_social_network a:hover{
+    border-radius: 50px;
+    background-color: #1380da;
+}
+
+
+nav,
+.links_nav_bar,
+.elements,
+.footer_container,
+.filters,
+.header_items,
+.benefits,
+.team,
+.projects,
+.customers{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* ------------------------------------ Index ------------------------------------ */
 
 
 /* --------- Header --------- */
+
+.header_icon{
+    width: 26px;
+    height: 12px;
+}
+
+.header_icon_tel{
+    width: 10px;
+    height: 16px;
+    margin-left: 30px;
+}
 
 .header_items{
     padding-top: 25px;
@@ -106,10 +165,6 @@ footer,
 
 .header_contact{
     margin-left: 344px;
-}
-
-.header_contact .tel{
-    padding-left: 50px;
 }
 
 .nav_bar{
@@ -137,7 +192,7 @@ footer,
 }
 
 .hero{
-    background-image: url(/images/hero.jpg);
+    background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.133),  rgba(0, 0, 0, 0.133)), url(/images/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -165,6 +220,7 @@ footer,
 
 /* --------- Benefits --------- */
 
+
 .benefit{
     width: 270px;
 }
@@ -173,12 +229,11 @@ footer,
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
+    height: 120px;
 }
 
 .benefit_icon{
-    fill: #000;
-    width: 70px;
-    height: 70px;
+    margin: 25px 100px;
 }
 
 /* --------- what do we do --------- */
@@ -187,15 +242,22 @@ footer,
     padding-bottom: 97px;
 }
 
+
 /* --------- Team --------- */
+
+.team .employee_social_network{
+    padding:16px 32px 30px;
+}
+
 
 .team_section{
     background-color: #F5F4FA;
 }
 
-.team li{
+.team > li{
     background-color: #fff;
-    height: 368px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
     text-align: center;
 }
 
@@ -205,6 +267,48 @@ footer,
     padding-bottom: 10px;
     font-weight: medium;
 }
+/* --------- Customers --------- */
+
+.customers_container{
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.customer{
+    padding: 12px 33px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 80px;
+}
+
+.icon{
+    fill: #AFB1B8;
+    width: 105px;
+    height: 55px;
+}
+
+.icon:hover{
+    fill: #2196F3;
+}
+
+/* --------- footer --------- */
+
+.footer_logo_and_address{
+    width: 231px;
+}
+
+.footer_social_netwoks h3{
+    color:#fff;
+}
+
+.footer_social_netwoks{
+    margin-left: 70px;
+}
+
+.footer_social_netwoks .icons_social_network{
+    margin-top: 20px;
+}
 
 
 /* ------------------------------------ Portafolio ------------------------------------ */
@@ -212,6 +316,7 @@ footer,
 /* --------- main ---------  */
 
 /* ---------  nav bar buttons --------- */
+
 
 .bar_buttons{
     margin-bottom: 50px;
@@ -231,24 +336,28 @@ footer,
 /* --------- Projects --------- */
 
 .projects_container{
-    justify-content: center;
     margin-bottom: 82px;
-}
-
-.project a:hover{
-    color: #757575;
 }
 
 .projects{
     justify-content: center;
 }
 
-.text_card{
-    margin: 20px ;
+.project{
+    height: 404;
+    border: 1px solid  #ECECEC;
 }
 
-.footer_card{
-    border: 1px solid #ECECEC;
+.project_text{
+    line-height: 36px;
+    margin: 20px 24px;
 }
+
+.project:hover{
+    cursor: pointer;
+    color: #757575;
+    box-shadow: 1px 4px 6px #EEEEEE;
+}
+
 
 
