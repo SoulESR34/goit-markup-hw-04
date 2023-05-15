@@ -130,7 +130,7 @@ footer,
 /* --------- Flexbox --------- */
 nav,
 .links_nav_bar,
-.elements,
+.what_do_we_do_images,
 .footer_container,
 .filters,
 .header_items,
@@ -243,6 +243,17 @@ nav,
     padding-bottom: 97px;
 }
 
+.what_do_we_do_image_description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 70PX;
+    position: relative;
+    top: -73px;
+    background-color: rgba(47, 48, 58, 0.80);
+    color: #FFF;
+}
 
 /* --------- Team --------- */
 
